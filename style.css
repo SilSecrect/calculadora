@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oxanium&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(196, 194, 194);
+}
+
+.corpo-cal{
+    position: absolute;
+    top: 60px;
+    left: 600px;
+    width: 28%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #222327 /*#222327 */
+}
+.corpo-cal input{
+    font-family: "VT323", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: end;
+    font-size: 40px;
+    background-color: #7AA393;
+    border: none;
+    font-weight: 500;
+    color: black;
+    border-radius: 3px;
+}
+.base{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.caixa{
+    width: 120px;
+    height: 30px;
+    background-color: #3C251F;
+    border-radius: 5px;
+    box-shadow: 0px 1px #dad7d7;
+    border: 1px solid white;
+}
+strong{
+    color: black;
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px 0px 5px 0px;
+}
+.base p{
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.base button{
+    padding: 10px;
+    border: none;
+    background-color: #70C6A9;
+    color: white;
+    border-radius: 50px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.base button:active{
+    background-color: #222327;
+    color: #f80404;
+    border: 1px solid white;
+}
+
+.corpo-teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-primeira ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ul-primeira ul li button{
+    width: 60px;
+    margin: 10px;
+    font-family: "VT323", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #9D9D9F;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+.ul-segunda ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    gap: 5px;
+    margin: 5px;
+}
+
+.ul-segunda ul li button{
+    width: 60px;
+    margin: 5px; 
+    padding: 5px;
+    font-size: 30px;
+    background-color: #222327;
+    color: white;
+    cursor: pointer;
+}
+.ul-terceira ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    gap: 5px;
+    margin: 15px;
+    align-items: center;
+}
+.ul-terceira ul .li{
+    width: 60px;
+    margin: 5px;
+    font-family: "VT323", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    border: none;
+    background-color: #9D9D9F;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.ul-terceira ul li .btn{
+    width: 60px;
+    margin: 5px;
+    font-family: "VT323", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    border: none;
+    background-color: #9D9D9F;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+.btns{
+    border-radius: 10px;
+    height: 80px;
+    width: 60px;
+    margin-left: 5px;
+    background-color: #70C6A9;
+    font-size: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.bts{
+    border-radius: 10px;
+    height: 80px;
+    width: 60px;
+    margin-left: 5px;
+    background-color: #9D9D9F;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/*vamos começar nosso responsivooooo*/
+@media  (max-width: 900px) {
+    .corpo-cal{    
+        left: 240px;
+        width: 50%;
+    }
+}
+@media  (max-width: 740px) {
+    .corpo-cal{    
+        left: 110px;
+        width: 70%;
+    }
+}
+@media  (max-width: 740px) {
+    .corpo-cal{    
+        left: 25px;
+        width: 90%;
+    }
+}
+@media  (max-width: 450px) {
+    .corpo-cal{    
+        left: px;
+        width: 89%;
+    }
+    .base button{
+        padding: 5px;    
+    }
+    .ul-primeira ul li button{
+        width: 50px;
+        margin: 5px;
+        padding: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #9D9D9F;
+        color: white;
+        border: none;
+        border-radius: 40px;
+    }
+    .ul-segunda ul li button{
+        width: 40px;
+        margin: 0px; 
+       
+        font-size: 15px;
+       
+    }
+    .ul-terceira ul .li{
+        width: 40px;
+        margin: 5px;
+        font-family: "VT323", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 20px;
+    }
+    .ul-terceira ul li .btn{
+        width: 40px;
+        margin: 5px;
+        font-family: "VT323", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 20px;
+        border: none;
+        background-color: #9D9D9F;
+        border-radius: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    .bts, .btns{   
+        height: 30px;
+        width: 40px;
+        font-size: 20px;
+    }
+}
+
+
+

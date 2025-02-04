@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="corpo-cal">
+      <div>
+        <input type="text" id="telaOK"  disabled> <!-- 18 Itens-->
+      </div>
+      <!-- primeira parte da calculadora -->
+      <div class="inicial-on">
+        <div class="base">
+            <div class="base">
+                <div class="caixa"> 
+                </div>
+                &nbsp;
+                &nbsp;
+                <div>
+                    <p><strong>SIL</strong>tech &nbsp; MB54306</p>
+                    <p>T2-DIGIT Eletronic</p>
+                    <p>CALCULATOR</p>
+                </div>
+            </div>
+            <div>
+                <button>ON/OFF</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- primeira parte da calculadora acima -->
+        <!-- Segunda parte da calculadora -->
+      <div class="corpo">
+            <div class="ul-primeira">
+                <ul>
+                    <li><button disabled>M+</button></li>
+                    <li><button disabled>M-</button></li>
+                    <li><button disabled>MRC</button></li>
+                    <li><button disabled>GT</button></li>
+                    <li><button id="clear">CE</button></li>
+                </ul>
+            </div>
+            <div class="corpo-teclas">
+                    <div class="ul-segunda">
+                        <ul class="numbers">
+                            <li><button type="button">7</button></li>
+                            <li><button type="button">8</button></li>
+                            <li><button type="button">9</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            <li><button type="button">6</button></li>
+                            <li><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">0</button></li>
+                            <li><button type="button">00</button></li>
+                            <li><button type="button">,</button></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="ul-terceira">
+                        <ul class="operation">
+                            <li><button class="btn" type="button">/</button></li>
+                            <li class="li" id="backspace"><</li>   
+                            <li><button class="btn" type="button">*</button></li>
+                            <li><button class="btn" type="button">%</button></li>
+                            <li><button class="btn" type="button">-</button></li>
+                            <li><button disabled class="btn" type="button">MU</button></li>
+                            <li><button class="btns" type="button">+</button></li>
+                            <li><button class="bts" id="igual" type="button">=</button></li>
+                        </ul>
+                    </div>
+            </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
