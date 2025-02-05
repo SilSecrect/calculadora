@@ -27,7 +27,7 @@ class Calculadora {
 
         if(operador != '='){
             this.operador = operador;
-            this.tela.value = this.operador;
+            this.tela.value = this.num1;
         } // Limpa para digitar o próximo número
     }
 
